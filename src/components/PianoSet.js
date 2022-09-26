@@ -8,7 +8,7 @@ function pianoSet({ set }) {
 
   return (
     <div className="piano-set">
-      {set.map((key) => <div key={uniqid} onMouseDown={() => synth.triggerAttack("C4")} onMouseUp={() => synth.triggerRelease()} className={key.name}></div>)}
+      {set.map((key) => <div key={uniqid} onMouseDownCapture={() => synth.triggerAttack(key.note)} onMouseOutCapture={() => synth.triggerRelease()} onMouseUpCapture={() => synth.triggerRelease()} className={key.name}></div>)}
     </div>
   )
 }
