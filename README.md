@@ -1,3 +1,3 @@
 # Kique's Virtual Piano
 
-quick attempt at creating a virtual piano with the audio context API
+Quick attempt at creating a piano. Used tone.js
